@@ -62,8 +62,11 @@ npx shadcn-ui@latest add form input button toast
 
 Project Structure
 my-signup-app/
+
 ├── src/
+
 │   ├── app/
+
 │   │   ├── page.tsx              # Login page
 │   │   ├── sign_up/
 │   │   │   └── page.tsx          # Signup page
