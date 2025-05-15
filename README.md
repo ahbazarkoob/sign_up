@@ -58,15 +58,32 @@ Set up shadcn/ui (if not already initialized):
 npx shadcn-ui@latest init
 npx shadcn-ui@latest add form input button toast
 
+Usage
+
+Run the development server:
+npm run dev
+
+Open http://localhost:3000 to view the login page.
+
+Test the pages:
+
+Login Page (/):
+Enter email and password.
+Toggle password visibility using the eye icon.
+Submit to navigate to a success page (mocked as /Dashboard).
+Click "Sign up" to navigate to /sign_up.
 
 
-Project Structure
+Signup Page (/sign_up):
+Enter first name, last name, email, phone number, password, and confirm password.
+Validate inputs in real-time (e.g., email format, 10-digit phone, matching passwords).
+Toggle password visibility for both password fields.
+Submit to navigate to a success page (mocked as /success_page).
+
+
 my-signup-app/
-
 ├── src/
-
 │   ├── app/
-
 │   │   ├── page.tsx              # Login page
 │   │   ├── sign_up/
 │   │   │   └── page.tsx          # Signup page
@@ -91,31 +108,6 @@ my-signup-app/
 ├── tailwind.config.ts            # Tailwind configuration
 ├── package.json                  # Dependencies and scripts
 └── README.md                     # This file
-
-Usage
-
-Run the development server:
-npm run dev
-
-Open http://localhost:3000 to view the login page.
-
-Test the pages:
-
-Login Page (/):
-Enter email and password.
-Toggle password visibility using the eye icon.
-Submit to navigate to a success page (mocked as /Dashboard).
-Click "Sign up" to navigate to /sign_up.
-
-
-Signup Page (/sign_up):
-Enter first name, last name, email, phone number, password, and confirm password.
-Validate inputs in real-time (e.g., email format, 10-digit phone, matching passwords).
-Toggle password visibility for both password fields.
-Submit to navigate to a success page (mocked as /success_page).
-
-
-
 
 Build for production:
 npm run build
