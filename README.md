@@ -1,5 +1,5 @@
 My Signup App
-A modern web application built with Next.js, featuring professional signup and login pages with form validation, responsive design, and a clean user interface. The app uses TypeScript for type safety, Tailwind CSS for styling, and shadcn/ui components for a polished look. Form handling is powered by react-hook-form and zod for robust validation, with password visibility toggles using lucide-react icons.
+A modern web application built with Next.js. The app uses TypeScript for type safety, Tailwind CSS for styling, and shadcn/ui components for a polished look. Form handling is powered by react-hook-form and zod for robust validation, with password visibility toggles using lucide-react icons.
 Features
 
 Signup Page: Allows users to register with fields for first name, last name, email, phone number, password, and confirm password. Includes real-time validation and password visibility toggles.
@@ -79,35 +79,6 @@ Enter first name, last name, email, phone number, password, and confirm password
 Validate inputs in real-time (e.g., email format, 10-digit phone, matching passwords).
 Toggle password visibility for both password fields.
 Submit to navigate to a success page (mocked as /success_page).
-
-
-my-signup-app/
-├── src/
-│   ├── app/
-│   │   ├── page.tsx              # Login page
-│   │   ├── sign_up/
-│   │   │   └── page.tsx          # Signup page
-│   │   └── globals.css           # Tailwind CSS styles
-│   ├── components/
-│   │   ├── Common/
-│   │   │   └── OnboardingHeader.tsx  # Header with logo
-│   │   ├── login/
-│   │   │   └── login-section.tsx # Login form component
-│   │   └── signup/
-│   │       └── sign-up-section.tsx # Signup form component
-│   ├── schema/
-│   │   ├── login-schema.ts       # Zod schema for login
-│   │   └── sign_up_schema.ts     # Zod schema for signup
-│   ├── services/
-│   │   └── signupServices.ts     # Mock signup API service
-│   ├── public/
-│   │   └── images/
-│   │       └── Logo_Red.svg      # Logo for header
-│   └── lib/
-│       └── utils.ts              # Utility functions (e.g., cn)
-├── tailwind.config.ts            # Tailwind configuration
-├── package.json                  # Dependencies and scripts
-└── README.md                     # This file
 
 Build for production:
 npm run build
